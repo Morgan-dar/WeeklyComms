@@ -16,10 +16,10 @@ FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/1
 
 # Your Clients and their Banner Images
 CLIENTS = {
-    "livelearningco": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20b2b%20Google.png",
-    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20b2b%20Google.png", 
-    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20NIHR.png",
-    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20PUK.png"
+    "livelearningco": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png",
+    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png", 
+    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_NIHR.png",
+    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_PUK.png"
 }
 
 # ==========================================
@@ -52,8 +52,6 @@ lines = [l.decode('utf-8') for l in response.readlines()]
 reader = csv.reader(lines)
 next(reader) # Skip the header row
 
-all_courses_html = ""
-
 # DATE FILTER LOGIC: Find the Monday two weeks from now
 today = datetime.now()
 days_to_target_monday = 14 - today.weekday() # Calculates days until the week after next
@@ -63,6 +61,9 @@ target_end_date = target_start_date + timedelta(days=6) # Sunday of that week
 target_end_date = target_end_date.replace(hour=23, minute=59, second=59)
 
 print(f"Filtering for courses between {target_start_date.strftime('%d/%m/%Y')} and {target_end_date.strftime('%d/%m/%Y')}")
+
+valid_courses = []
+seen_courses = set()
 
 # Assuming Columns: Template File, Date, Time, Course URL, Image URL
 for row in reader:
@@ -75,23 +76,27 @@ for row in reader:
     course_url = row[3].strip()
     image_url = row[4].strip()
 
-    # Convert date string (e.g., 24/03/2026) to get Day and Month
+    # Convert date string
     try:
         date_obj = datetime.strptime(date_str, '%d/%m/%Y') 
     except ValueError:
-        print(f"Warning: Could not read date '{date_str}'. Make sure it is DD/MM/YYYY.")
         continue
         
     # Check if the course falls within our target week!
     if not (target_start_date <= date_obj <= target_end_date):
         continue 
+        
+    # Deduplicate! (If the sheet has the schedule pasted multiple times)
+    dedup_key = (template_filename, date_str, time_str)
+    if dedup_key in seen_courses:
+        continue
+    seen_courses.add(dedup_key)
     
     # Open the specific HTML template for this course from GitHub
     try:
         with open(template_filename, 'r', encoding='utf-8') as f:
             course_html = f.read()
     except FileNotFoundError:
-        print(f"Warning: Could not find template {template_filename}. Skipping.")
         continue
 
     # Inject the data into the placeholders
@@ -102,7 +107,17 @@ for row in reader:
     course_html = course_html.replace("{{ course_url }}", course_url)
     course_html = course_html.replace("{{ image_url }}", image_url)
     
-    all_courses_html += course_html + "\n<br>\n" # Add a line break between courses
+    # Store it for sorting: Sort by Date, then by Time
+    sort_key = (date_obj, time_str[:5]) 
+    valid_courses.append((sort_key, course_html))
+
+# SORT THE COURSES CHRONOLOGICALLY
+valid_courses.sort(key=lambda x: x[0])
+
+# Build the final string
+all_courses_html = ""
+for course in valid_courses:
+    all_courses_html += course[1] + "\n<br>\n"
 
 # ==========================================
 # 4. STITCH TOGETHER & GENERATE CLIENT EMAILS
