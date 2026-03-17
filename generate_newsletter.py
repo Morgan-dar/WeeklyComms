@@ -1,7 +1,7 @@
 import os
 import csv
 import urllib.request
-import google.generativeai as genai
+from google import genai
 from datetime import datetime
 
 # ==========================================
@@ -24,15 +24,18 @@ CLIENTS = {
 # 2. ASK GEMINI FOR THE WORKSPACE SUMMARY
 # ==========================================
 print("Asking Gemini to summarize the Workspace update...")
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-pro')
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+
 prompt = f"""
 Read this Google Workspace update article: {WORKSPACE_ARTICLE_URL}
 Provide a response in this EXACT format with no other text:
 Title: [A short, catchy title for the update]
 Summary: [A 2-sentence summary explaining why this matters to everyday users]
 """
-response = model.generate_content(prompt)
+response = client.models.generate_content(
+    model='gemini-2.5-flash',
+    contents=prompt
+)
 response_lines = response.text.strip().split('\n')
 
 ws_title = response_lines[0].replace("Title: ", "").strip()
