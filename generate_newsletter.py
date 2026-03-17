@@ -25,8 +25,7 @@ CLIENTS = {
 # ==========================================
 print("Asking Gemini to summarize the Workspace update...")
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-3.1-pro') 
-
+model = genai.GenerativeModel('gemini-1.5-pro')
 prompt = f"""
 Read this Google Workspace update article: {WORKSPACE_ARTICLE_URL}
 Provide a response in this EXACT format with no other text:
