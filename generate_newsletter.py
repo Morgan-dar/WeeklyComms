@@ -2,7 +2,7 @@ import os
 import csv
 import urllib.request
 from google import genai
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # ==========================================
 # 1. WEEKLY SETTINGS (Update these each week!)
@@ -17,7 +17,9 @@ FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/1
 # Your Clients and their Banner Images
 CLIENTS = {
     "livelearningco": "https://gcehif.stripocdn.email/content/guids/CABINET_ccbfbb74097fc5c6468b2533f6ce6a32909772bbb1aa99cb6260df642c16ff90/images/emailbanner_livelearningco_1.png",
-    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/banner_b2b.png" # Replace with real banners as needed
+    "b2b": "YOUR_B2B_STRIPO_IMAGE_LINK_HERE", 
+    "nihr": "YOUR_NIHR_STRIPO_IMAGE_LINK_HERE",
+    "puk": "YOUR_PUK_STRIPO_IMAGE_LINK_HERE"
 }
 
 # ==========================================
@@ -52,6 +54,16 @@ next(reader) # Skip the header row
 
 all_courses_html = ""
 
+# DATE FILTER LOGIC: Find the Monday two weeks from now
+today = datetime.now()
+days_to_target_monday = 14 - today.weekday() # Calculates days until the week after next
+target_start_date = today + timedelta(days=days_to_target_monday)
+target_start_date = target_start_date.replace(hour=0, minute=0, second=0, microsecond=0)
+target_end_date = target_start_date + timedelta(days=6) # Sunday of that week
+target_end_date = target_end_date.replace(hour=23, minute=59, second=59)
+
+print(f"Filtering for courses between {target_start_date.strftime('%d/%m/%Y')} and {target_end_date.strftime('%d/%m/%Y')}")
+
 # Assuming Columns: Template File, Date, Time, Course URL, Image URL
 for row in reader:
     if len(row) < 5 or not row[0].strip():
@@ -69,6 +81,10 @@ for row in reader:
     except ValueError:
         print(f"Warning: Could not read date '{date_str}'. Make sure it is DD/MM/YYYY.")
         continue
+        
+    # Check if the course falls within our target week!
+    if not (target_start_date <= date_obj <= target_end_date):
+        continue 
     
     # Open the specific HTML template for this course from GitHub
     try:
