@@ -15,12 +15,11 @@ FEATURED_COURSE_NAME = "Meeting the Future"
 FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
 
 # Your Clients and their Banner Images
-# Your Clients and their Banner Images
 CLIENTS = {
-    "livelearningco": "https://gcehif.stripocdn.email/content/guids/CABINET_ccbfbb74097fc5c6468b2533f6ce6a32909772bbb1aa99cb6260df642c16ff90/images/emailbanner_livelearningco_1.png",
-    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20b2b%20Google.png", 
-    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20NIHR.png",
-    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20PUK.png"
+    "livelearningco": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png",
+    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png", 
+    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_NIHR.png",
+    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_PUK.png"
 }
 
 # ==========================================
@@ -66,16 +65,18 @@ print(f"Filtering for courses between {target_start_date.strftime('%d/%m/%Y')} a
 valid_courses = []
 seen_courses = set()
 
-# Assuming Columns: Template File, Date, Time, Course URL, Image URL
 for row in reader:
     if len(row) < 5 or not row[0].strip():
-        continue # Skip empty rows
+        continue 
         
     template_filename = row[0].strip()
     date_str = row[1].strip()
     time_str = row[2].strip()
     course_url = row[3].strip()
     image_url = row[4].strip()
+
+    # CRITICAL URL FIX: Replace the hardcoded Sheet URL with our dynamic placeholder!
+    course_url = course_url.replace("/livelearningco/", "/{{ client_id }}/")
 
     # Convert date string
     try:
@@ -87,20 +88,21 @@ for row in reader:
     if not (target_start_date <= date_obj <= target_end_date):
         continue 
         
-    # Deduplicate! (If the sheet has the schedule pasted multiple times)
-    dedup_key = (template_filename, date_str, time_str)
+    # AGGRESSIVE DEDUPLICATION: Strip hidden spaces and standardize time format
+    clean_time = time_str.strip()[:5] 
+    dedup_key = (template_filename, date_obj, clean_time)
     if dedup_key in seen_courses:
         continue
     seen_courses.add(dedup_key)
     
-    # Open the specific HTML template for this course from GitHub
+    # Open the HTML template
     try:
         with open(template_filename, 'r', encoding='utf-8') as f:
             course_html = f.read()
     except FileNotFoundError:
         continue
 
-    # Inject the data into the placeholders
+    # Inject data into placeholders
     course_html = course_html.replace("{{ day_of_week }}", date_obj.strftime('%A'))
     course_html = course_html.replace("{{ day_number }}", date_obj.strftime('%d').lstrip('0'))
     course_html = course_html.replace("{{ month_name }}", date_obj.strftime('%b'))
@@ -108,14 +110,13 @@ for row in reader:
     course_html = course_html.replace("{{ course_url }}", course_url)
     course_html = course_html.replace("{{ image_url }}", image_url)
     
-    # Store it for sorting: Sort by Date, then by Time
-    sort_key = (date_obj, time_str[:5]) 
+    # Store for sorting
+    sort_key = (date_obj, clean_time) 
     valid_courses.append((sort_key, course_html))
 
-# SORT THE COURSES CHRONOLOGICALLY
+# SORT CHRONOLOGICALLY
 valid_courses.sort(key=lambda x: x[0])
 
-# Build the final string
 all_courses_html = ""
 for course in valid_courses:
     all_courses_html += course[1] + "\n<br>\n"
@@ -139,7 +140,6 @@ master_html = master_html.replace("{{ workspace_course_title }}", FEATURED_COURS
 master_html = master_html.replace("{{ workspace_course_link }}", FEATURED_COURSE_URL)
 master_html = master_html.replace("{{ course_modules_html }}", all_courses_html)
 
-# Create an output folder
 os.makedirs('output', exist_ok=True)
 
 # Generate an email for each client
