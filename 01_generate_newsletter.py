@@ -10,23 +10,23 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/improving-connection-between-Google-Calendar-events-and-Google-Meet-calls.html"
-WORKSPACE_COURSE_NAME = "Meeting the Future"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-new-meetings-section-in-Google-Chat.html"
+WORKSPACE_COURSE_NAME = "Chat Smarter, Work Better"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Meeting the Future"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
+TRENDING_MAIN_NAME = "Unlocking Google Forms"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/27/how-to-use-google-forms"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Google Sheets: The Spreadsheet for the Modern World, Intermediate Edition"
-TRENDING_SUB1_DATETIME = "Wed 25th Mar @ 10:30"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/6/google-sheets-the-spreadsheet-for-the-modern-world-intermediate-edition"
+TRENDING_SUB1_NAME = "Google Sheets: Pivot Tables"
+TRENDING_SUB1_DATETIME = "Wed 8th Apr @ 10:30"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/course/47/using-pivot-tables-in-google-sheets"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "An Intermediate Guide to Looker Studio"
-TRENDING_SUB2_DATETIME = "Thu 26th Mar @ 14:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/72/an-intermediate-guide-to-looker-studio"
+TRENDING_SUB2_NAME = "Getting organised with Google Keep & Tasks"
+TRENDING_SUB2_DATETIME = "Thu 9th Apr @ 12:30"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/15/getting-organised-with-google-keep-tasks"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
