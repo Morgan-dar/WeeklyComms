@@ -15,12 +15,11 @@ FEATURED_COURSE_NAME = "Chat Smarter, Work Better"
 FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
 
 # Your Clients and their Banner Images
-# Your Clients and their Banner Images
 CLIENTS = {
-    "livelearningco": "https://gcehif.stripocdn.email/content/guids/CABINET_ccbfbb74097fc5c6468b2533f6ce6a32909772bbb1aa99cb6260df642c16ff90/images/emailbanner_livelearningco_1.png",
-    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20b2b%20Google.png", 
-    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20NIHR.png",
-    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20PUK.png"
+    "livelearningco": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png",
+    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png", 
+    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_NIHR.png",
+    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_PUK.png"
 }
 
 # ==========================================
