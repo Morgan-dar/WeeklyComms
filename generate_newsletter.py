@@ -10,13 +10,13 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # The Workspace Update
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-new-meetings-section-in-Google-Chat.html"
-FEATURED_COURSE_NAME = "Chat Smarter, Work Better"
-FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/improving-connection-between-Google-Calendar-events-and-Google-Meet-calls.html"
+FEATURED_COURSE_NAME = "Meeting the Future"
+FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
 
 # Your Clients and their Banner Images
 CLIENTS = {
-    "livelearningco": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png",
+    "livelearningco": "https://gcehif.stripocdn.email/content/guids/CABINET_ccbfbb74097fc5c6468b2533f6ce6a32909772bbb1aa99cb6260df642c16ff90/images/emailbanner_livelearningco_1.png",
     "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png", 
     "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_NIHR.png",
     "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_PUK.png"
