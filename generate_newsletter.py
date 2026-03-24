@@ -10,9 +10,9 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # The Workspace Update
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/improving-connection-between-Google-Calendar-events-and-Google-Meet-calls.html"
-FEATURED_COURSE_NAME = "Meeting the Future"
-FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-new-meetings-section-in-Google-Chat.html"
+FEATURED_COURSE_NAME = "Chat Smarter, Work Better"
+FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
 
 # Your Clients and their Banner Images
 # Your Clients and their Banner Images
