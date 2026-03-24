@@ -15,8 +15,8 @@ WORKSPACE_COURSE_NAME = "Chat Smarter, Work Better"
 WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Unlocking Google Forms"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/27/how-to-use-google-forms"
+TRENDING_MAIN_NAME = "Workspace Studio: Automate Your Boring Tasks with Ease"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/159/workspace-studio-automate-your-boring-tasks-with-ease"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
 TRENDING_SUB1_NAME = "Google Sheets: Pivot Tables"
