@@ -5,19 +5,33 @@ from google import genai
 from datetime import datetime, timedelta
 
 # ==========================================
-# 1. WEEKLY SETTINGS (Update these each week!)
+# 1. WEEKLY CONTROL PANEL (Update these each week!)
 # ==========================================
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
-# The Workspace Update
+# --- A. WORKSPACE UPDATE ---
 WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/improving-connection-between-Google-Calendar-events-and-Google-Meet-calls.html"
-FEATURED_COURSE_NAME = "Meeting the Future"
-FEATURED_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
+WORKSPACE_COURSE_NAME = "Meeting the Future"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
 
-# Your Clients and their Banner Images
+# --- B. NEW & TRENDING: MAIN COURSE ---
+TRENDING_MAIN_NAME = "Meeting the Future"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future"
+
+# --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
+TRENDING_SUB1_NAME = "Google Sheets: The Spreadsheet for the Modern World, Intermediate Edition"
+TRENDING_SUB1_DATETIME = "Wed 25th Mar @ 10:30"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/6/google-sheets-the-spreadsheet-for-the-modern-world-intermediate-edition"
+
+# --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
+TRENDING_SUB2_NAME = "An Intermediate Guide to Looker Studio"
+TRENDING_SUB2_DATETIME = "Thu 26th Mar @ 14:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/72/an-intermediate-guide-to-looker-studio"
+
+# --- E. CLIENT BANNERS ---
 CLIENTS = {
     "livelearningco": "https://gcehif.stripocdn.email/content/guids/CABINET_ccbfbb74097fc5c6468b2533f6ce6a32909772bbb1aa99cb6260df642c16ff90/images/emailbanner_livelearningco_1.png",
-    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_b2b_Google.png", 
+    "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20b2b%20Google.png", 
     "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_NIHR.png",
     "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_PUK.png"
 }
@@ -54,10 +68,10 @@ next(reader) # Skip the header row
 
 # DATE FILTER LOGIC: Find the Monday two weeks from now
 today = datetime.now()
-days_to_target_monday = 14 - today.weekday() # Calculates days until the week after next
+days_to_target_monday = 14 - today.weekday() 
 target_start_date = today + timedelta(days=days_to_target_monday)
 target_start_date = target_start_date.replace(hour=0, minute=0, second=0, microsecond=0)
-target_end_date = target_start_date + timedelta(days=6) # Sunday of that week
+target_end_date = target_start_date + timedelta(days=6) 
 target_end_date = target_end_date.replace(hour=23, minute=59, second=59)
 
 print(f"Filtering for courses between {target_start_date.strftime('%d/%m/%Y')} and {target_end_date.strftime('%d/%m/%Y')}")
@@ -75,34 +89,30 @@ for row in reader:
     course_url = row[3].strip()
     image_url = row[4].strip()
 
-    # CRITICAL URL FIX: Replace the hardcoded Sheet URL with our dynamic placeholder!
+    # CRITICAL URL FIX
     course_url = course_url.replace("/livelearningco/", "/{{ client_id }}/")
 
-    # Convert date string
     try:
         date_obj = datetime.strptime(date_str, '%d/%m/%Y') 
     except ValueError:
         continue
         
-    # Check if the course falls within our target week!
     if not (target_start_date <= date_obj <= target_end_date):
         continue 
         
-    # AGGRESSIVE DEDUPLICATION: Strip hidden spaces and standardize time format
+    # AGGRESSIVE DEDUPLICATION
     clean_time = time_str.strip()[:5] 
     dedup_key = (template_filename, date_obj, clean_time)
     if dedup_key in seen_courses:
         continue
     seen_courses.add(dedup_key)
     
-    # Open the HTML template
     try:
         with open(template_filename, 'r', encoding='utf-8') as f:
             course_html = f.read()
     except FileNotFoundError:
         continue
 
-    # Inject data into placeholders
     course_html = course_html.replace("{{ day_of_week }}", date_obj.strftime('%A'))
     course_html = course_html.replace("{{ day_number }}", date_obj.strftime('%d').lstrip('0'))
     course_html = course_html.replace("{{ month_name }}", date_obj.strftime('%b'))
@@ -110,7 +120,6 @@ for row in reader:
     course_html = course_html.replace("{{ course_url }}", course_url)
     course_html = course_html.replace("{{ image_url }}", image_url)
     
-    # Store for sorting
     sort_key = (date_obj, clean_time) 
     valid_courses.append((sort_key, course_html))
 
@@ -132,12 +141,24 @@ except FileNotFoundError:
     print("CRITICAL ERROR: 'base_template.html' is missing from your repository!")
     exit(1)
 
-# Inject Gemini updates and featured course
+# Inject Gemini updates
 master_html = master_html.replace("{{ workspace_title }}", ws_title)
 master_html = master_html.replace("{{ workspace_content }}", ws_summary)
 master_html = master_html.replace("{{ workspace_link }}", WORKSPACE_ARTICLE_URL)
-master_html = master_html.replace("{{ workspace_course_title }}", FEATURED_COURSE_NAME)
-master_html = master_html.replace("{{ workspace_course_link }}", FEATURED_COURSE_URL)
+master_html = master_html.replace("{{ workspace_course_title }}", WORKSPACE_COURSE_NAME)
+master_html = master_html.replace("{{ workspace_course_link }}", WORKSPACE_COURSE_URL)
+
+# Inject New & Trending updates
+master_html = master_html.replace("{{ trending_main_title }}", TRENDING_MAIN_NAME)
+master_html = master_html.replace("{{ trending_main_link }}", TRENDING_MAIN_URL)
+master_html = master_html.replace("{{ trending_sub1_title }}", TRENDING_SUB1_NAME)
+master_html = master_html.replace("{{ trending_sub1_datetime }}", TRENDING_SUB1_DATETIME)
+master_html = master_html.replace("{{ trending_sub1_link }}", TRENDING_SUB1_URL)
+master_html = master_html.replace("{{ trending_sub2_title }}", TRENDING_SUB2_NAME)
+master_html = master_html.replace("{{ trending_sub2_datetime }}", TRENDING_SUB2_DATETIME)
+master_html = master_html.replace("{{ trending_sub2_link }}", TRENDING_SUB2_URL)
+
+# Inject the full calendar
 master_html = master_html.replace("{{ course_modules_html }}", all_courses_html)
 
 os.makedirs('output', exist_ok=True)
