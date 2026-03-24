@@ -23,7 +23,7 @@ jobs:
       - name: Run the Python script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python generate_newsletter.py
+        run: python 01_generate_newsletter.py
 
       - name: Upload the finished newsletters
         uses: actions/upload-artifact@v4
