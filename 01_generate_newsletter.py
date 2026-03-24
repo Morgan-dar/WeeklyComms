@@ -32,8 +32,8 @@ TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/15/
 CLIENTS = {
     "livelearningco": "https://gcehif.stripocdn.email/content/guids/CABINET_ccbfbb74097fc5c6468b2533f6ce6a32909772bbb1aa99cb6260df642c16ff90/images/emailbanner_livelearningco_1.png",
     "b2b": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20b2b%20Google.png", 
-    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_NIHR.png",
-    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner_PUK.png"
+    "nihr": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20NIHR.png",
+    "puk": "https://raw.githubusercontent.com/Morgan-dar/WeeklyComms/main/Emailbanner%20PUK.png"
 }
 
 # ==========================================
