@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 # ==========================================
 # 1. WEEKLY CONTROL PANEL (Update these each week!)
 # ==========================================
-CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
+CSV_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-guest-accounts.html" 
 
 # --- A. WORKSPACE UPDATE ---
 WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-new-meetings-section-in-Google-Chat.html"
@@ -15,18 +15,18 @@ WORKSPACE_COURSE_NAME = "Chat Smarter, Work Better"
 WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Workspace Studio: Automate Your Boring Tasks with Ease"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/159/workspace-studio-automate-your-boring-tasks-with-ease"
+TRENDING_MAIN_NAME = "Getting Started with Google Workspace - Communication Tools"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/3/getting-started-with-google-workspace-communication-tools"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Google Sheets: Pivot Tables"
-TRENDING_SUB1_DATETIME = "Wed 8th Apr @ 10:30"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/course/47/using-pivot-tables-in-google-sheets"
+TRENDING_SUB1_NAME = "Power up your Presentations 1: Designing with Google Slides"
+TRENDING_SUB1_DATETIME = "Wed 15th Apr @ 14:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/11/presenting-with-google-slides"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Getting organised with Google Keep & Tasks"
-TRENDING_SUB2_DATETIME = "Thu 9th Apr @ 12:30"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/15/getting-organised-with-google-keep-tasks"
+TRENDING_SUB2_NAME = "Bringing Gemini into Your Daily Work"
+TRENDING_SUB2_DATETIME = "Fri 17th Apr @ 11:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/131/bringing-gemini-into-your-daily-work/"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
