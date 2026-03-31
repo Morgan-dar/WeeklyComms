@@ -7,10 +7,10 @@ from datetime import datetime, timedelta
 # ==========================================
 # 1. WEEKLY CONTROL PANEL (Update these each week!)
 # ==========================================
-CSV_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-guest-accounts.html" 
+CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-new-meetings-section-in-Google-Chat.html"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-guest-accounts.html"
 WORKSPACE_COURSE_NAME = "Chat Smarter, Work Better"
 WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
 
