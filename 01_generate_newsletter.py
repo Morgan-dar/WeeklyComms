@@ -11,26 +11,26 @@ CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1p
 
 # --- A. WORKSPACE UPDATE ---
 WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-guest-accounts.html"
-WORKSPACE_COURSE_NAME = "Chat Smarter, Work Better"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
+WORKSPACE_COURSE_NAME = "Meeting The Future"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Getting Started with Google Workspace - Communication Tools"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/3/getting-started-with-google-workspace-communication-tools"
+TRENDING_MAIN_NAME = "Create Your Own Topic Expert with NotebookLM"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Power up your Presentations 1: Designing with Google Slides"
-TRENDING_SUB1_DATETIME = "Wed 15th Apr @ 14:00"
+TRENDING_SUB1_NAME = "Google Sheets Functions for Beginners"
+TRENDING_SUB1_DATETIME = "Mon 20th Apr @ 11:00"
 TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/11/presenting-with-google-slides"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Bringing Gemini into Your Daily Work"
-TRENDING_SUB2_DATETIME = "Fri 17th Apr @ 11:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/131/bringing-gemini-into-your-daily-work/"
+TRENDING_SUB2_NAME = "An Intermediate Guide to Functions in Google Sheets"
+TRENDING_SUB2_DATETIME = "Thu 23rd Apr @ 14:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/learn/courses/141/an-intermediate-guide-to-functions-in-google-sheets"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
-    "livelearningco": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_b2b_Google.png?raw=true",
+    
     "b2b": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_b2b_Google.png?raw=true", 
     "nihr": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_NIHR.png?raw=true",
     "puk": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_PUK.png?raw=true"
