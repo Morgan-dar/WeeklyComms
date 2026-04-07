@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/03/introducing-guest-accounts.html"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/04/google-meet-is-now-available-on-carplay.html"
 WORKSPACE_COURSE_NAME = "Meeting The Future"
 WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
 
