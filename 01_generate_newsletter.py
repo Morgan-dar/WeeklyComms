@@ -30,7 +30,7 @@ TRENDING_SUB2_URL = "https://training.ceyx.app/learn/courses/141/an-intermediate
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
-    
+    "livelearningco": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_b2b_Google.png?raw=true",
     "b2b": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_b2b_Google.png?raw=true", 
     "nihr": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_NIHR.png?raw=true",
     "puk": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_PUK.png?raw=true"
