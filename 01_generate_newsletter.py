@@ -10,23 +10,23 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/04/google-meet-is-now-available-on-carplay.html"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/04/improved-video-quality-on-high-resolution-displays-in-Google-Meet.html"
 WORKSPACE_COURSE_NAME = "Meeting The Future"
 WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Create Your Own Topic Expert with NotebookLM"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
+TRENDING_MAIN_NAME = "Tips & Tricks Using the Chrome Browser"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/34/tips-tricks-using-the-chrome-browser"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Google Sheets Functions for Beginners"
-TRENDING_SUB1_DATETIME = "Mon 20th Apr @ 11:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/11/presenting-with-google-slides"
+TRENDING_SUB1_NAME = "An Intro to Using Gemini AI in Google Workspace"
+TRENDING_SUB1_DATETIME = "Tue 5th May @ 10:30"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/59/using-gemini-ai-in-google-workspace/"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "An Intermediate Guide to Functions in Google Sheets"
-TRENDING_SUB2_DATETIME = "Thu 23rd Apr @ 14:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/learn/courses/141/an-intermediate-guide-to-functions-in-google-sheets"
+TRENDING_SUB2_NAME = "Power up your Presentations 1: Designing with Google Slides"
+TRENDING_SUB2_DATETIME = "Fri 8th May @ 10:30"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/11/presenting-with-google-slides"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
