@@ -10,23 +10,23 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/05/more-options-for-forms-headers.html"
-WORKSPACE_COURSE_NAME = "Unlocking Google Forms"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/27/how-to-use-google-forms"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/05/whiteboarding-add-ons-meet-hardware-android.html"
+WORKSPACE_COURSE_NAME = "Meeting the Future..."
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Meeting the Future: A Guide to Google Meet for Seamless Virtual Collaboration"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
+TRENDING_MAIN_NAME = "Create Your Own Topic Expert with NotebookLM"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Gmail: Get Organised, Stay Connected, and Get Things Done"
-TRENDING_SUB1_DATETIME = "Tue 2nd Jun @ 14:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/44/making-the-most-of-gmail"
+TRENDING_SUB1_NAME = "Supercharge your schedule with Google Calendar"
+TRENDING_SUB1_DATETIME = "Tue 9th Jun @ 12:30"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/49/how-to-use-google-calendar"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Bringing Gemini into Your Daily Work"
-TRENDING_SUB2_DATETIME = "Thu 4th June @ 10:30"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/131/bringing-gemini-into-your-daily-work/"
+TRENDING_SUB2_NAME = "Chat Smarter, Work Better: Mastering Google Chat for Effective Communication"
+TRENDING_SUB2_DATETIME = "Thu 11th June @ 12:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/12/chat-smarter-work-better-mastering-google-chat-for-effective-communication"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
