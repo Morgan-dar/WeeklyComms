@@ -15,18 +15,18 @@ WORKSPACE_COURSE_NAME = "Create Your Own Topic Expert..."
 WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Workspace Studio: Automate Your Boring Tasks with Ease"
-TRENDING_MAIN_URL = "https://training.ceyx.app/livelearning/learn/courses/159/workspace-studio-automate-your-boring-tasks-with-ease"
+TRENDING_MAIN_NAME = "Getting Started with Google Workspace - Collaboration Tools"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/course/4/getting-started-with-google-workspace-collaboration-tools"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Team Management with Google Workspace"
-TRENDING_SUB1_DATETIME = "Mon 15th Jun @ 10:30"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/61/team-management-with-google-workspace"
+TRENDING_SUB1_NAME = "Google Sheets: The Spreadsheet for the Modern World, Intermediate Edition"
+TRENDING_SUB1_DATETIME = "Tue 23rd Jun @ 14:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/6/google-sheets-the-spreadsheet-for-the-modern-world-intermediate-edition"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Google Docs Power User: Tips and Tricks for Advanced Users"
-TRENDING_SUB2_DATETIME = "Fri 19th June @ 10:30"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/64/google-docs-power-user-tips-and-tricks-for-advanced-users"
+TRENDING_SUB2_NAME = "Create Your Own Topic Expert with NotebookLM"
+TRENDING_SUB2_DATETIME = "Thu 25th June @ 10:30"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
