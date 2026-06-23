@@ -10,23 +10,23 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/06/gmail-as-source-in-ask-gemini-in-drive-now-generally-available.html"
-WORKSPACE_COURSE_NAME = "Learn Google Drive in 60 Minutes"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/26/learn-google-drive-in-60-minutes"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/06/troubleshoot-formula-errors-in-sheets.html"
+WORKSPACE_COURSE_NAME = "The Data Architect: Gemini in Google Sheets"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/201/the-data-architect-gemini-in-google-sheets"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Workspace Studio: Automate Your Boring Tasks with Ease"
-TRENDING_MAIN_URL = "https://training.ceyx.app/livelearning/learn/courses/159/workspace-studio-automate-your-boring-tasks-with-ease"
+TRENDING_MAIN_NAME = "The Intelligent Editor: Gemini in Google Docs"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/200/the-intelligent-editor-gemini-in-google-docs"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Smarter Communication: Gemini in Gmail and Google Chat"
-TRENDING_SUB1_DATETIME = "Wed 1st Jul @ 11:30"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/197/smarter-communication-gemini-in-gmail-and-google-chat"
+TRENDING_SUB1_NAME = "Meeting the Future: A Guide to Google Meet for Seamless Virtual Collaboration"
+TRENDING_SUB1_DATETIME = "Thu 9th Jul @ 12:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Getting Organised with Google Keep & Tasks"
-TRENDING_SUB2_DATETIME = "Thu 2nd Jul @ 12:30"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/15/getting-organised-with-google-keep-tasks"
+TRENDING_SUB2_NAME = "Gemini for Project Management: From Planning to Execution"
+TRENDING_SUB2_DATETIME = "Fri 10th Jul @ 12:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/206/gemini-for-people-management-empowering-teams-and-enhancing-leadership"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
