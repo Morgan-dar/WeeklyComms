@@ -10,23 +10,23 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/06/troubleshoot-formula-errors-in-sheets.html"
-WORKSPACE_COURSE_NAME = "The Data Architect: Gemini in Google Sheets"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/201/the-data-architect-gemini-in-google-sheets"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/06/custom-event-colors-in-google-calendar.html"
+WORKSPACE_COURSE_NAME = "Supercharge your Schedule..."
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/livelearningco/learn/courses/49/how-to-use-google-calendar"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "The Intelligent Editor: Gemini in Google Docs"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/200/the-intelligent-editor-gemini-in-google-docs"
+TRENDING_MAIN_NAME = "Gemini for Project Management: From Planning to Execution"
+TRENDING_MAIN_URL = "https://training.ceyx.app/livelearningco/learn/courses/207/gemini-for-project-management-from-planning-to-execution"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Meeting the Future: A Guide to Google Meet for Seamless Virtual Collaboration"
-TRENDING_SUB1_DATETIME = "Thu 9th Jul @ 12:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
+TRENDING_SUB1_NAME = " Tips & Tricks using Chrome"
+TRENDING_SUB1_DATETIME = "Tue 14th Jul @ 11:30"
+TRENDING_SUB1_URL = "https://training.ceyx.app/livelearningco/learn/courses/34/tips-tricks-using-the-chrome-browser"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Gemini for Project Management: From Planning to Execution"
-TRENDING_SUB2_DATETIME = "Fri 10th Jul @ 12:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/206/gemini-for-people-management-empowering-teams-and-enhancing-leadership"
+TRENDING_SUB2_NAME = "Gemini for Sales: Automated Pitch Prep and Relationship Management"
+TRENDING_SUB2_DATETIME = "Thu 1th Jul @ 11:00-11:30"
+TRENDING_SUB2_URL = "https://training.ceyx.app/livelearningco/learn/courses/208/gemini-for-sales-automated-pitch-prep-and-relationship-management"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
