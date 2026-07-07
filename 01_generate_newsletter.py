@@ -10,23 +10,23 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/06/custom-event-colors-in-google-calendar.html"
-WORKSPACE_COURSE_NAME = "Supercharge your Schedule..."
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/livelearningco/learn/courses/49/how-to-use-google-calendar"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/06/create-fully-native-and-editable-presentations-with-Gemini-in-Google-Slides.html"
+WORKSPACE_COURSE_NAME = "The Narrative Architect: Gemini in Google Slides"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/livelearningco/learn/courses/210/the-narrative-architect-gemini-in-google-slides"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Gemini for Project Management: From Planning to Execution"
-TRENDING_MAIN_URL = "https://training.ceyx.app/livelearningco/learn/courses/207/gemini-for-project-management-from-planning-to-execution"
+TRENDING_MAIN_NAME = "The Data Architect: Gemini in Google Sheets"
+TRENDING_MAIN_URL = "https://training.ceyx.app/livelearningco/learn/courses/201/the-data-architect-gemini-in-google-sheets"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = " Tips & Tricks using Chrome"
-TRENDING_SUB1_DATETIME = "Tue 14th Jul @ 11:30"
-TRENDING_SUB1_URL = "https://training.ceyx.app/livelearningco/learn/courses/34/tips-tricks-using-the-chrome-browser"
+TRENDING_SUB1_NAME = "Google Docs Power User: Tips and Tricks for Advanced Users"
+TRENDING_SUB1_DATETIME = "Tue 21st Jul @ 11:30"
+TRENDING_SUB1_URL = "https://training.ceyx.app/livelearningco/learn/courses/64/google-docs-power-user-tips-and-tricks-for-advanced-users"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Gemini for Sales: Automated Pitch Prep and Relationship Management"
-TRENDING_SUB2_DATETIME = "Thu 1th Jul @ 11:00-11:30"
-TRENDING_SUB2_URL = "https://training.ceyx.app/livelearningco/learn/courses/208/gemini-for-sales-automated-pitch-prep-and-relationship-management"
+TRENDING_SUB2_NAME = "Google Sheets Pivot Tables: Your Secret Weapon for Data Analysis"
+TRENDING_SUB2_DATETIME = "Thu 24th Jul @ 11:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/livelearningco/learn/course/47/using-pivot-tables-in-google-sheets"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
