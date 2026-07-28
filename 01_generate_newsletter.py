@@ -11,22 +11,22 @@ CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1p
 
 # --- A. WORKSPACE UPDATE ---
 WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html"
-WORKSPACE_COURSE_NAME = "Create Your Own Topic Expert with Gemini Notebooks"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
+WORKSPACE_COURSE_NAME = "Check our Calendar to see When our next Gemini focused session is"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/pages/32/calendar"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Power up your Presentations 1: Designing with Google Slides"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/11/presenting-with-google-slides"
+TRENDING_MAIN_NAME = "Gemini for People Management: Empowering Teams and Enhancing Leadership"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/206/gemini-for-people-management-empowering-teams-and-enhancing-leadership"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "An Intermediate Guide to Data Studio"
-TRENDING_SUB1_DATETIME = "Mon 3rd Aug @ 14:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/72/an-intermediate-guide-to-data-studio"
+TRENDING_SUB1_NAME = "Mastering the Fundamentals of Google Docs"
+TRENDING_SUB1_DATETIME = "Tue 11th Aug @ 10:30"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/63/mastering-the-fundamentals-of-google-docs"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Gemini for Project Management: From Planning to Execution"
-TRENDING_SUB2_DATETIME = "Thur 6th Aug @ 13:30"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/207/gemini-for-project-management-from-planning-to-execution"
+TRENDING_SUB2_NAME = "Master the Basics of Google Sheets"
+TRENDING_SUB2_DATETIME = "Fri 14th Aug @ 11:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/5/master-the-basics-of-google-sheets/"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
