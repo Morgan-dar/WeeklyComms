@@ -10,22 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html"
-WORKSPACE_COURSE_NAME = "Check our Calendar to see When our next Gemini focused session is"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/pages/32/calendar"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/08/visual-screenshots-now-included-in-Google-Meet-meeting-notes.html"
+WORKSPACE_COURSE_NAME = "The Meeting Deputy: Gemini in Google Meet"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/199/the-meeting-deputy-gemini-in-google-meet"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Gemini for People Management: Empowering Teams and Enhancing Leadership"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/206/gemini-for-people-management-empowering-teams-and-enhancing-leadership"
+TRENDING_MAIN_NAME = "Learn Google Drive in 60 Minutes"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/26/learn-google-drive-in-60-minutes"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Mastering the Fundamentals of Google Docs"
-TRENDING_SUB1_DATETIME = "Tue 11th Aug @ 10:30"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/63/mastering-the-fundamentals-of-google-docs"
+TRENDING_SUB1_NAME = "The Data Architect: Gemini in Google Sheets"
+TRENDING_SUB1_DATETIME = "Wed 19th Aug @ 12:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/201/the-data-architect-gemini-in-google-sheets"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Master the Basics of Google Sheets"
-TRENDING_SUB2_DATETIME = "Fri 14th Aug @ 11:00"
+TRENDING_SUB2_NAME = "Team Management with Google Workspace"
+TRENDING_SUB2_DATETIME = "Thu 20th Aug @ 11:00"
 TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/5/master-the-basics-of-google-sheets/"
 
 # --- E. CLIENT BANNERS ---
