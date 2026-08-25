@@ -10,23 +10,23 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/08/make-copy-of-notebook-in-gemini-notebook.html"
-WORKSPACE_COURSE_NAME = "Create Your Own Topic Expert..."
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/08/use-google-sheets-canvas-to-visualize-data.html"
+WORKSPACE_COURSE_NAME = "The Data Architect"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/201/the-data-architect-gemini-in-google-sheets"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Tips & Tricks Using the Chrome Browser"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/34/tips-tricks-using-the-chrome-browser"
+TRENDING_MAIN_NAME = "Mastering Project Management with Google Workspace"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/58/mastering-project-management-with-google-workspace"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Google Sheets Functions for Beginners"
-TRENDING_SUB1_DATETIME = "Tue 1st Sep @ 14:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/course/7/using-functions-in-google-sheets"
+TRENDING_SUB1_NAME = "Learn Google Drive in 60 Minutes"
+TRENDING_SUB1_DATETIME = "Tue 8th Sep @ 14:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/26/learn-google-drive-in-60-minutes"
 
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Workspace Studio: Automate Your Boring Tasks with Ease"
-TRENDING_SUB2_DATETIME = "Wed 2nd Sep @ 12:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/livelearning/learn/courses/159/workspace-studio-automate-your-boring-tasks-with-ease"
+TRENDING_SUB2_NAME = "Create Your Own Topic Expert with Gemini Notebook"
+TRENDING_SUB2_DATETIME = "Fri 11th Sep @ 10:30"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
