@@ -10,23 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/09/custom-instructions-for-gemini-in-Workspace-now-available-in-more-apps.html"
-WORKSPACE_COURSE_NAME = "Bringing Gemini into your Daily Work"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/131/bringing-gemini-into-your-daily-work/"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/09/create-and-edit-calculated-fields-in-Google-Sheets-pivot-tables-with-an-improved-editor.html"
+WORKSPACE_COURSE_NAME = "Google Sheets Pivot Tables..."
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/course/47/using-pivot-tables-in-google-sheets"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Mastering Deep Research in Gemini"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/203/mastering-deep-research-in-gemini"
+TRENDING_MAIN_NAME = "Getting Started with Google Workspace - Communication Tools"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/3/getting-started-with-google-workspace-communication-tools"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Team Management with Google Workspace"
-TRENDING_SUB1_DATETIME = "Thu 24th Sep @ 14:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/61/team-management-with-google-workspace"
-
+TRENDING_SUB1_NAME = "Mastering Project Management with Google Workspace"
+TRENDING_SUB1_DATETIME = "Thu 1st Oct @ 11:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/58/mastering-project-management-with-google-workspace/
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "An Intro To Gemini AI in Google Workspace"
-TRENDING_SUB2_DATETIME = "Thu 23rd Sep @ 14:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/59/using-gemini-ai-in-google-workspace/"
+TRENDING_SUB2_NAME = "Google Sheets: The Spreadsheet for the Modern World, Intermediate Edition"
+TRENDING_SUB2_DATETIME = "Wed 30th Sep @ 14:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/6/google-sheets-the-spreadsheet-for-the-modern-world-intermediate-edition"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
@@ -68,7 +67,7 @@ next(reader) # Skip the header row
 
 # DATE FILTER LOGIC: Find the Monday two weeks from now
 today = datetime.now()
-days_to_target_monday = 14 - today.weekday() 
+days_to_target_monday = 21 - today.weekday() 
 target_start_date = today + timedelta(days=days_to_target_monday)
 target_start_date = target_start_date.replace(hour=0, minute=0, second=0, microsecond=0)
 target_end_date = target_start_date + timedelta(days=6) 
