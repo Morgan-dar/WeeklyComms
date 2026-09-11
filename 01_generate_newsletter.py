@@ -67,7 +67,7 @@ next(reader) # Skip the header row
 
 # DATE FILTER LOGIC: Find the Monday two weeks from now
 today = datetime.now()
-days_to_target_monday = 21 - today.weekday() 
+days_to_target_monday = 14 - today.weekday() 
 target_start_date = today + timedelta(days=days_to_target_monday)
 target_start_date = target_start_date.replace(hour=0, minute=0, second=0, microsecond=0)
 target_end_date = target_start_date + timedelta(days=6) 
