@@ -21,7 +21,7 @@ TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/3/g
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
 TRENDING_SUB1_NAME = "Mastering Project Management with Google Workspace"
 TRENDING_SUB1_DATETIME = "Thu 1st Oct @ 11:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/58/mastering-project-management-with-google-workspace/
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/58/mastering-project-management-with-google-workspace/"
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
 TRENDING_SUB2_NAME = "Google Sheets: The Spreadsheet for the Modern World, Intermediate Edition"
 TRENDING_SUB2_DATETIME = "Wed 30th Sep @ 14:00"
