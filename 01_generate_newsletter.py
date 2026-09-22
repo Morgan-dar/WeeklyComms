@@ -10,22 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/09/create-and-edit-calculated-fields-in-Google-Sheets-pivot-tables-with-an-improved-editor.html"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/09/manually-reorder-and-custom-sort-pivot.html"
 WORKSPACE_COURSE_NAME = "Google Sheets Pivot Tables..."
 WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/course/47/using-pivot-tables-in-google-sheets"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Getting Started with Google Workspace - Communication Tools"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/3/getting-started-with-google-workspace-communication-tools"
+TRENDING_MAIN_NAME = "Smarter Communication: Gemini in Gmail and Google Chat"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/197/smarter-communication-gemini-in-gmail-and-google-chat"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Mastering Project Management with Google Workspace"
-TRENDING_SUB1_DATETIME = "Thu 1st Oct @ 11:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/58/mastering-project-management-with-google-workspace/"
+TRENDING_SUB1_NAME = "Gmail: Get Organised, Stay Connected, and Get Things Done"
+TRENDING_SUB1_DATETIME = "Wed 7th Oct @ 14:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/44/making-the-most-of-gmail"
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Google Sheets: The Spreadsheet for the Modern World, Intermediate Edition"
-TRENDING_SUB2_DATETIME = "Wed 30th Sep @ 14:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/6/google-sheets-the-spreadsheet-for-the-modern-world-intermediate-edition"
+TRENDING_SUB2_NAME = "Getting Started With Data Studio"
+TRENDING_SUB2_DATETIME = "Thu 8th Oct @ 14:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/71/getting-started-with-data-studio"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
