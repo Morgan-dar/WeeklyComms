@@ -10,22 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/09/now-in-beta-import-and-convert-your.html"
-WORKSPACE_COURSE_NAME = "Working with Microsoft Files in Google Workspace"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/48/working-with-microsoft-files-in-google-workspace"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/08/ask-gemini-in-chat.html"
+WORKSPACE_COURSE_NAME = "Smarter Communication: Gemini in Gmail and Google Chat"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/197/smarter-communication-gemini-in-gmail-and-google-chat"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "An Intro To Gemini AI in Google Workspace"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/59/using-gemini-ai-in-google-workspace/"
+TRENDING_MAIN_NAME = "Meeting the Future: A Guide to Google Meet for Seamless Virtual Collaboration"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Getting Started with Google Workspace - Collaboration Tools"
-TRENDING_SUB1_DATETIME = "Mon 12th Oct @ 11:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/44/making-the-most-of-gmail"
+TRENDING_SUB1_NAME = "Workspace Studio: Automate Your Boring Tasks with Ease"
+TRENDING_SUB1_DATETIME = "Mon 21st Oct @ 14:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/livelearning/learn/courses/159/workspace-studio-automate-your-boring-tasks-with-ease"
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Unlocking Google Forms: A Step-by-Step Guide to Creating Surveys, Questionnaires & Quizzes"
-TRENDING_SUB2_DATETIME = "Tue 13th Oct @ 14:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/27/how-to-use-google-forms"
+TRENDING_SUB2_NAME = "Power up your Presentations 2: Delivering with Google Slides"
+TRENDING_SUB2_DATETIME = "Fri 23rd Oct @ 11:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/73/power-up-your-presentations-2-delivering-presentations-with-google-slides/"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
