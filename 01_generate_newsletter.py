@@ -10,22 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/08/ask-gemini-in-chat.html"
-WORKSPACE_COURSE_NAME = "Smarter Communication: Gemini in Gmail and Google Chat"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/197/smarter-communication-gemini-in-gmail-and-google-chat"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/10/find-your-routine-next-steps-on-post-meeting-screen-in-Google-Meet.html"
+WORKSPACE_COURSE_NAME = "Meeting the Future: A Guide to Google Meet for Seamless Virtual Collaboration"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Meeting the Future: A Guide to Google Meet for Seamless Virtual Collaboration"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/14/meeting-the-future-a-guide-to-google-meet-for-seamless-virtual-collaboration"
+TRENDING_MAIN_NAME = "The Intelligent Archive: Mastering Gemini in Google Drive"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/198/the-intelligent-archive-mastering-gemini-in-google-drive"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Workspace Studio: Automate Your Boring Tasks with Ease"
-TRENDING_SUB1_DATETIME = "Mon 21st Oct @ 14:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/livelearning/learn/courses/159/workspace-studio-automate-your-boring-tasks-with-ease"
+TRENDING_SUB1_NAME = "Supercharge your schedule with Google Calendar"
+TRENDING_SUB1_DATETIME = "Mon 26st Oct @ 14:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/49/how-to-use-google-calendar"
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Power up your Presentations 2: Delivering with Google Slides"
-TRENDING_SUB2_DATETIME = "Fri 23rd Oct @ 11:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/73/power-up-your-presentations-2-delivering-presentations-with-google-slides/"
+TRENDING_SUB2_NAME = "Team Management with Google Workspace"
+TRENDING_SUB2_DATETIME = "Wed 28th Oct @ 14:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/61/team-management-with-google-workspace"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
