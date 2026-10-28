@@ -10,22 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html"
-WORKSPACE_COURSE_NAME = "Beyond The Basics with Gemini: Using Tools to Change how Gemini Works"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/231/beyond-the-basics-with-gemini"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/10/create-box-and-whisker-charts-in-google-sheets.html"
+WORKSPACE_COURSE_NAME = "Google Sheets Charts: Make Your Data Come Alive"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/livelearningco/learn/courses/53/using-charts-in-google-sheets"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "NEW COURSE: Beyond The Basics with Gemini: Using Tools to Change how Gemini Works"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/231/beyond-the-basics-with-gemini"
+TRENDING_MAIN_NAME = "Unlocking Google Forms: A Step-by-Step Guide to Creating Surveys, Questionnaires & Quizzes"
+TRENDING_MAIN_URL = "https://training.ceyx.app/livelearningco/learn/courses/27/how-to-use-google-forms"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Tips & Tricks Using the Chrome Browser"
-TRENDING_SUB1_DATETIME = "Wed 4th Nov @ 12:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/34/tips-tricks-using-the-chrome-browser"
+TRENDING_SUB1_NAME = "Getting Started with Google Workspace - Collaboration Tools"
+TRENDING_SUB1_DATETIME = "Tue 10th Nov @ 11:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/livelearningco/learn/course/4/getting-started-with-google-workspace-collaboration-tools"
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Gemini for People Management: Empowering Teams and Enhancing Leadership"
-TRENDING_SUB2_DATETIME = "Thu 5th Nov @ 11:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/206/gemini-for-people-management-empowering-teams-and-enhancing-leadership"
+TRENDING_SUB2_NAME = "Google Sheets: The Spreadsheet for the Modern World, Intermediate Edition"
+TRENDING_SUB2_DATETIME = "Thu 12th Nov @ 10:30"
+TRENDING_SUB2_URL = "https://training.ceyx.app/livelearningco/learn/courses/6/google-sheets-the-spreadsheet-for-the-modern-world-intermediate-edition"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
