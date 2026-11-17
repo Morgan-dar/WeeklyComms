@@ -10,22 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html"
-WORKSPACE_COURSE_NAME = "Beyond the Basics of Gemini.."
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/livelearningco/learn/courses/231/beyond-the-basics-with-gemini"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/11/schedule-meetings-in-single-click-from-conversations-in-Google-Chat.html"
+WORKSPACE_COURSE_NAME = "Smarter Communication: Gemini in Gmail/Chat/Calendar"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/197/smarter-communication-gemini-in-gmail-and-google-chat"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
 TRENDING_MAIN_NAME = "Beyond The Basics with Gemini: Using Tools to Change how Gemini Works"
 TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/231/beyond-the-basics-with-gemini"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Learn Google Drive in 60 Minutes"
-TRENDING_SUB1_DATETIME = "Tue 24th Nov @ 12:30"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/26/learn-google-drive-in-60-minutes"
+TRENDING_SUB1_NAME = "Bringing Gemini into your Daily Work"
+TRENDING_SUB1_DATETIME = "Mon 7th Dec @ 11:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/131/bringing-gemini-into-your-daily-work/"
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Getting Organised with Google Keep & Tasks"
-TRENDING_SUB2_DATETIME = "Thu 26th Nov @ 14:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/15/getting-organised-with-google-keep-tasks"
+TRENDING_SUB2_NAME = "Tips & Tricks Using the Chrome Browser"
+TRENDING_SUB2_DATETIME = "Mon 7th Dec @ 14:00"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/34/tips-tricks-using-the-chrome-browser"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
