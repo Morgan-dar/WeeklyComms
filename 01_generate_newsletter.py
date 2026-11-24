@@ -10,22 +10,22 @@ from datetime import datetime, timedelta
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKKcq07WVCePpVsrX-1pNn5PBiDHZoV3Svl0EHIEelISNHJCnvndvUrlxaa4SZRm1y7YnbIiWkUgaj/pub?output=csv" 
 
 # --- A. WORKSPACE UPDATE ---
-WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/11/schedule-meetings-in-single-click-from-conversations-in-Google-Chat.html"
-WORKSPACE_COURSE_NAME = "Smarter Communication: Gemini in Gmail/Chat/Calendar"
-WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/197/smarter-communication-gemini-in-gmail-and-google-chat"
+WORKSPACE_ARTICLE_URL = "https://workspaceupdates.googleblog.com/2026/11/add-inline-captions-cross-references-and-tables-of-captions-in-Google-Docs.html"
+WORKSPACE_COURSE_NAME = "Google Docs Power User: Tips and Tricks for Advanced Users"
+WORKSPACE_COURSE_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/64/google-docs-power-user-tips-and-tricks-for-advanced-users"
 
 # --- B. NEW & TRENDING: MAIN COURSE ---
-TRENDING_MAIN_NAME = "Beyond The Basics with Gemini: Using Tools to Change how Gemini Works"
-TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/231/beyond-the-basics-with-gemini"
+TRENDING_MAIN_NAME = "Tips & Tricks Using the Chrome Browser"
+TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/34/tips-tricks-using-the-chrome-browser"
 
 # --- C. NEW & TRENDING: SECONDARY COURSE 1 ---
-TRENDING_SUB1_NAME = "Bringing Gemini into your Daily Work"
-TRENDING_SUB1_DATETIME = "Mon 7th Dec @ 11:00"
-TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/131/bringing-gemini-into-your-daily-work/"
+TRENDING_SUB1_NAME = "Mastering the Fundamentals of Google Docs"
+TRENDING_SUB1_DATETIME = "Tue 8th Dec @ 14:00"
+TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/63/mastering-the-fundamentals-of-google-docs"
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
-TRENDING_SUB2_NAME = "Tips & Tricks Using the Chrome Browser"
-TRENDING_SUB2_DATETIME = "Mon 7th Dec @ 14:00"
-TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/34/tips-tricks-using-the-chrome-browser"
+TRENDING_SUB2_NAME = "Create Your Own Topic Expert with Gemini Notebook"
+TRENDING_SUB2_DATETIME = "Wed 9th Dec @ 10:30"
+TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130/create-your-own-topic-expert-with-notebooklm"
 
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
