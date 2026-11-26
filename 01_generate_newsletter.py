@@ -22,6 +22,7 @@ TRENDING_MAIN_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/34/
 TRENDING_SUB1_NAME = "Mastering the Fundamentals of Google Docs"
 TRENDING_SUB1_DATETIME = "Tue 8th Dec @ 14:00"
 TRENDING_SUB1_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/63/mastering-the-fundamentals-of-google-docs"
+
 # --- D. NEW & TRENDING: SECONDARY COURSE 2 ---
 TRENDING_SUB2_NAME = "Create Your Own Topic Expert with Gemini Notebook"
 TRENDING_SUB2_DATETIME = "Wed 9th Dec @ 10:30"
@@ -30,7 +31,6 @@ TRENDING_SUB2_URL = "https://training.ceyx.app/{{ client_id }}/learn/courses/130
 # --- E. CLIENT BANNERS ---
 CLIENTS = {
     "livelearningco": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_b2b_Google.png?raw=true",
-    "b2b": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_b2b_Google.png?raw=true", 
     "nihr": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_NIHR.png?raw=true",
     "puk": "https://github.com/Morgan-dar/WeeklyComms/blob/main/Emailbanner_PUK.png?raw=true"
 }
@@ -75,6 +75,13 @@ target_end_date = target_end_date.replace(hour=23, minute=59, second=59)
 
 print(f"Filtering for courses between {target_start_date.strftime('%d/%m/%Y')} and {target_end_date.strftime('%d/%m/%Y')}")
 
+# Normalise New & Trending URLs so we can exclude them from the general list
+trending_urls = {
+    TRENDING_MAIN_URL.strip().rstrip('/').lower(),
+    TRENDING_SUB1_URL.strip().rstrip('/').lower(),
+    TRENDING_SUB2_URL.strip().rstrip('/').lower(),
+}
+
 valid_courses = []
 seen_courses = set()
 
@@ -90,6 +97,10 @@ for row in reader:
 
     # CRITICAL URL FIX
     course_url = course_url.replace("/livelearningco/", "/{{ client_id }}/")
+
+    # Skip courses already featured in New & Trending
+    if course_url.strip().rstrip('/').lower() in trending_urls:
+        continue
 
     try:
         date_obj = datetime.strptime(date_str, '%d/%m/%Y') 
@@ -115,7 +126,7 @@ for row in reader:
     course_html = course_html.replace("{{ day_of_week }}", date_obj.strftime('%A'))
     course_html = course_html.replace("{{ day_number }}", date_obj.strftime('%d').lstrip('0'))
     course_html = course_html.replace("{{ month_name }}", date_obj.strftime('%b'))
-    course_html = course_html.replace("{{ course_time }}", time_str)
+    course_html = course_html.replace("{{ course_time }}", clean_time)
     course_html = course_html.replace("{{ course_url }}", course_url)
     course_html = course_html.replace("{{ image_url }}", image_url)
     
